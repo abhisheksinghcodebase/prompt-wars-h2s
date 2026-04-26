@@ -1,0 +1,122 @@
+{
+  "country": "United States",
+  "countryCode": "US",
+  "flag": "🇺🇸",
+  "eligibility": {
+    "minAge": 18,
+    "citizenship": "U.S. citizen",
+    "residency": "Resident of the state where registering",
+    "disqualifications": [
+      "Non-citizen",
+      "Felony conviction (varies by state)",
+      "Mental incapacity adjudicated by court",
+      "Currently incarcerated (most states)"
+    ]
+  },
+  "votingMethods": [
+    {
+      "id": "in-person",
+      "name": "In-Person Voting",
+      "icon": "🏛️",
+      "description": "Vote at your polling place on Election Day",
+      "steps": [
+        "Locate your polling place at vote.gov or your state election website",
+        "Bring valid photo ID (varies by state)",
+        "Tell poll worker your name and address",
+        "Receive ballot and mark your choices",
+        "Feed ballot into scanner or give to poll worker"
+      ]
+    },
+    {
+      "id": "early",
+      "name": "Early Voting",
+      "icon": "⏰",
+      "description": "Vote before Election Day at designated early voting sites",
+      "steps": [
+        "Check if your state offers early voting",
+        "Find early voting location and hours",
+        "Bring valid ID",
+        "Vote as you would on Election Day"
+      ]
+    },
+    {
+      "id": "mail",
+      "name": "Vote by Mail / Absentee",
+      "icon": "📮",
+      "description": "Request and return a mail-in ballot",
+      "steps": [
+        "Request mail-in ballot from your county clerk",
+        "Receive ballot by mail",
+        "Mark your choices in private",
+        "Sign the return envelope",
+        "Return by mail or drop box before deadline"
+      ]
+    }
+  ],
+  "registrationSteps": [
+    {
+      "id": 1,
+      "title": "Check Eligibility",
+      "description": "Must be 18 by Election Day, U.S. citizen, resident of state",
+      "icon": "✅",
+      "timeRequired": "2 minutes",
+      "link": "https://vote.gov/"
+    },
+    {
+      "id": 2,
+      "title": "Register to Vote",
+      "description": "Register online at vote.gov or your state website. Deadline varies by state (7–30 days before election).",
+      "icon": "📋",
+      "timeRequired": "10 minutes",
+      "link": "https://vote.gov/register/"
+    },
+    {
+      "id": 3,
+      "title": "Confirm Registration",
+      "description": "Verify your registration status at your state's voter portal",
+      "icon": "🔍",
+      "timeRequired": "2 minutes"
+    },
+    {
+      "id": 4,
+      "title": "Locate Polling Place",
+      "description": "Find your assigned polling location via vote.gov",
+      "icon": "📍",
+      "timeRequired": "2 minutes"
+    },
+    {
+      "id": 5,
+      "title": "Know the Deadlines",
+      "description": "Registration deadline, early voting dates, mail ballot request deadline",
+      "icon": "📅",
+      "timeRequired": "5 minutes"
+    },
+    {
+      "id": 6,
+      "title": "Cast Your Vote",
+      "description": "Vote in-person, early, or by mail on Election Day",
+      "icon": "🗳️",
+      "timeRequired": "Election Day"
+    }
+  ],
+  "timeline": [
+    { "id": "registration_opens", "label": "Registration Opens", "description": "Voter registration available year-round in most states", "icon": "🗓️", "daysFromElection": -180, "color": "#6366f1" },
+    { "id": "primary", "label": "Primary Elections", "description": "Parties select their candidates", "icon": "🏅", "daysFromElection": -150, "color": "#8b5cf6" },
+    { "id": "registration_deadline", "label": "Registration Deadline", "description": "Varies by state — 7 to 30 days before Election Day", "icon": "⚠️", "daysFromElection": -30, "color": "#f59e0b" },
+    { "id": "early_voting", "label": "Early Voting Begins", "description": "Most states open early voting 2–3 weeks before Election Day", "icon": "⏰", "daysFromElection": -14, "color": "#06b6d4" },
+    { "id": "voting", "label": "Election Day", "description": "Presidential elections: First Tuesday after first Monday in November", "icon": "🗳️", "daysFromElection": 0, "color": "#10b981" },
+    { "id": "counting", "label": "Vote Counting", "description": "Ballots counted — mail ballots may take days", "icon": "🔢", "daysFromElection": 3, "color": "#6366f1" },
+    { "id": "certification", "label": "Results Certified", "description": "State certifies official results", "icon": "✅", "daysFromElection": 30, "color": "#f59e0b" },
+    { "id": "inauguration", "label": "Inauguration", "description": "Winner takes oath of office (January 20 for President)", "icon": "🏛️", "daysFromElection": 77, "color": "#10b981" }
+  ],
+  "faqs": [
+    { "q": "Can I vote without a photo ID?", "a": "Depends on your state. Some states have strict photo ID requirements, others accept non-photo ID or affidavits. Check your state's specific rules at vote.gov." },
+    { "q": "What if I miss the registration deadline?", "a": "Some states offer same-day voter registration at the polls. Check if your state allows this at vote.gov." },
+    { "q": "Can felons vote?", "a": "It depends on the state and offense. Some states restore voting rights after release, others after probation/parole. Maine and Vermont allow voting even while incarcerated." },
+    { "q": "How do I track my mail ballot?", "a": "Most states provide online ballot tracking through your county or state election website. ballottrax.net serves many counties." }
+  ],
+  "helplines": [
+    { "name": "National Voter Helpline", "number": "1-866-OUR-VOTE (687-8683)" },
+    { "name": "Vote.gov", "url": "https://vote.gov" }
+  ]
+}

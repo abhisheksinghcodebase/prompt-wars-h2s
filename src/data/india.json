@@ -1,0 +1,195 @@
+{
+  "country": "India",
+  "countryCode": "IN",
+  "flag": "🇮🇳",
+  "eligibility": {
+    "minAge": 18,
+    "citizenship": "Indian citizen",
+    "residency": "Ordinary resident of constituency",
+    "disqualifications": [
+      "Non-citizen",
+      "Unsound mind declared by court",
+      "Corrupt practice or electoral offense conviction"
+    ]
+  },
+  "votingMethods": [
+    {
+      "id": "in-person",
+      "name": "In-Person Voting",
+      "icon": "🏛️",
+      "description": "Vote at your designated polling booth using your Voter ID / Aadhaar",
+      "steps": [
+        "Find your polling booth via ECI portal or Voter Helpline 1950",
+        "Carry valid photo ID (Voter ID, Aadhaar, Passport, PAN card)",
+        "Join queue and receive ballot / EVM slip",
+        "Mark your choice on the EVM",
+        "Get Indelible ink mark on finger",
+        "Collect VVPAT slip confirmation"
+      ]
+    },
+    {
+      "id": "postal",
+      "name": "Postal Ballot",
+      "icon": "📮",
+      "description": "Available for service voters, seniors (85+), PwD, and essential services",
+      "steps": [
+        "Submit Form 12D to RO 5 days before notification",
+        "Receive postal ballot at registered address",
+        "Fill in vote and seal envelope",
+        "Return to Returning Officer before counting day"
+      ]
+    },
+    {
+      "id": "evm",
+      "name": "Electronic Voting Machine",
+      "icon": "🖥️",
+      "description": "India's primary voting system — tamper-proof EVM with VVPAT",
+      "steps": [
+        "Presiding officer enables EVM",
+        "Press button next to your candidate's name/symbol",
+        "VVPAT machine shows 7-second visual confirmation",
+        "Beep confirms vote recorded"
+      ]
+    }
+  ],
+  "registrationSteps": [
+    {
+      "id": 1,
+      "title": "Check Eligibility",
+      "description": "Ensure you are 18+ and an Indian citizen residing in the constituency",
+      "icon": "✅",
+      "timeRequired": "5 minutes",
+      "link": "https://electoralsearch.eci.gov.in/"
+    },
+    {
+      "id": 2,
+      "title": "Fill Form 6",
+      "description": "Apply online on Voter Helpline app or voters.eci.gov.in for new registration",
+      "icon": "📋",
+      "timeRequired": "15 minutes",
+      "link": "https://voters.eci.gov.in/"
+    },
+    {
+      "id": 3,
+      "title": "Upload Documents",
+      "description": "Age proof (birth cert / school certificate), address proof (Aadhaar / utility bill), passport photo",
+      "icon": "📎",
+      "timeRequired": "10 minutes",
+      "documents": ["Age Proof", "Address Proof", "Passport Photo"]
+    },
+    {
+      "id": 4,
+      "title": "Submit Application",
+      "description": "Submit online or at your local BLO / ERO office. Get acknowledgment slip.",
+      "icon": "📤",
+      "timeRequired": "5 minutes"
+    },
+    {
+      "id": 5,
+      "title": "BLO Verification",
+      "description": "Booth Level Officer visits for field verification within 30 days",
+      "icon": "🔍",
+      "timeRequired": "1–4 weeks"
+    },
+    {
+      "id": 6,
+      "title": "Receive Voter ID",
+      "description": "EPIC (Voter ID card) issued by ERO. Can download e-EPIC from Voter Helpline app.",
+      "icon": "🪪",
+      "timeRequired": "2–4 weeks after verification"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "announcement",
+      "label": "Election Announcement",
+      "description": "ECI announces election schedule — Model Code of Conduct kicks in",
+      "icon": "📢",
+      "daysFromElection": -60,
+      "color": "#6366f1"
+    },
+    {
+      "id": "registration_deadline",
+      "label": "Voter Roll Freeze",
+      "description": "Last date to register or update Voter ID before publication of final rolls",
+      "icon": "🗓️",
+      "daysFromElection": -45,
+      "color": "#f59e0b"
+    },
+    {
+      "id": "nomination",
+      "label": "Candidate Nominations",
+      "description": "Candidates file nomination papers with Returning Officer",
+      "icon": "📝",
+      "daysFromElection": -28,
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "campaigning",
+      "label": "Campaign Period",
+      "description": "Active campaigning by parties and candidates",
+      "icon": "🎙️",
+      "daysFromElection": -21,
+      "color": "#06b6d4"
+    },
+    {
+      "id": "campaign_silence",
+      "label": "Campaign Silence",
+      "description": "Campaigning banned 48 hours before polling",
+      "icon": "🤫",
+      "daysFromElection": -2,
+      "color": "#ef4444"
+    },
+    {
+      "id": "voting",
+      "label": "Polling Day",
+      "description": "Cast your vote at your designated polling station (7 AM – 6 PM)",
+      "icon": "🗳️",
+      "daysFromElection": 0,
+      "color": "#10b981"
+    },
+    {
+      "id": "counting",
+      "label": "Vote Counting",
+      "description": "EVM votes counted at counting centers. Results announced.",
+      "icon": "🔢",
+      "daysFromElection": 3,
+      "color": "#6366f1"
+    },
+    {
+      "id": "results",
+      "label": "Official Results",
+      "description": "ECI declares winners. Winners take oath of office.",
+      "icon": "🏆",
+      "daysFromElection": 7,
+      "color": "#f59e0b"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What ID can I use to vote if I lost my Voter ID?",
+      "a": "You can use 12 alternative IDs: Aadhaar, Passport, Driving License, PAN, MNREGA Job Card, Service Identity Card, Passbooks with photo, Health Smart Card, Pension Document, NPR Smart Card, or any other photo ID issued by government."
+    },
+    {
+      "q": "Can I vote if I'm away from my constituency?",
+      "a": "You must vote in the constituency where you are registered. Domestic migrants can register at current address using Form 6. Overseas voters can apply under ROVA scheme."
+    },
+    {
+      "q": "What is NOTA?",
+      "a": "NOTA (None of the Above) is an option on the EVM that allows voters to reject all candidates. It is represented by the last button on the EVM but does not affect election results."
+    },
+    {
+      "q": "Is voting compulsory in India?",
+      "a": "No. Voting is a right, not a legal obligation at the national level. However, some states have compulsory voting laws at local body elections."
+    },
+    {
+      "q": "How long does voter registration take?",
+      "a": "Online applications are processed in 4–6 weeks. The BLO verifies within 30 days. You can download e-EPIC immediately on successful verification."
+    }
+  ],
+  "helplines": [
+    { "name": "National Voter Helpline", "number": "1950", "available": "24x7" },
+    { "name": "ECI Website", "url": "https://www.eci.gov.in" },
+    { "name": "Voter Helpline App", "platform": "Android / iOS" }
+  ]
+}
